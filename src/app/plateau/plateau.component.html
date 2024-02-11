@@ -1,0 +1,7 @@
+<table>
+    <tr *ngFor="let row of gs.board; index as i;">
+        <td *ngFor="let cell of row; index as j;" [class]="classCell(i, j)" (click)="play.emit([i, j])">
+            {{cell == 0 ? '' : cell}}
+        </td>
+    </tr>
+</table>

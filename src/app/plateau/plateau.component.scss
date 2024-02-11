@@ -1,0 +1,25 @@
+/* bordures épaisses */
+td.top {
+    border-top: 2px black solid;
+}
+
+td.right:not(:nth-child(3)):not(:nth-child(6)) {
+    border-right: 2px black solid;
+}
+
+tr:not(:nth-child(3)):not(:nth-child(6)) > td.bottom {
+    border-bottom: 2px black solid;
+}
+
+td.left {
+    border-left: 2px black solid;
+}
+
+/* bordures fines */
+td:not(.right) {
+    border-right: 1px black solid;
+}
+
+td:not(.bottom) {
+    border-bottom: 1px black solid;
+}

@@ -1,0 +1,7 @@
+table {
+    border: 1px black solid;
+}
+
+tr > td:not(:last-child) {
+    border-right: 1px black solid;
+}

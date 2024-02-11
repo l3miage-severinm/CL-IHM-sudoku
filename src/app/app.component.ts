@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { SudokuService } from './sudoku.service';
+import { CV } from './sudoku';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'sudoku';
+
+  valueSelected: CV = 0;
+
+  constructor(public readonly sudokuService: SudokuService) {}
+
+  asCV(n: number): CV { return n as CV }
 }
